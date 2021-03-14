@@ -1,0 +1,37 @@
+.img-blog {
+    width: 300px;
+    height: 330px;
+    margin-top: 25px;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    box-shadow: 1px 1px 1px 1px #f0cb59;
+}
+
+#blog_list_title {
+    color: #696571;
+}
+
+#blog_list_title:hover {
+    color: #4b4b4b;
+}
+
+.ColorBloGText {
+    color: #000000;
+    line-height: 25px;
+    word-spacing: 2px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.ColorBloGText:hover {
+    color: #696571;
+}
+
+.specialText
+{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}

@@ -1,0 +1,1482 @@
+/*Font Family Used In Website*/
+/*Roboto (Integrated From Google Fonts Library)*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #f0cb59;
+  }
+  
+  ::selection {
+    color: white;
+    background: #f0cb59;
+  }
+
+
+ body {
+ 	font-family: 'TradeGothicLTW01-Light', sans-serif;
+ 	font-weight: 400;
+ }
+
+ body .container {
+ 	width: 100%;
+ 	max-width: 1200px;
+ }
+ html {
+    scroll-behavior: smooth;
+ }
+
+ body img {
+ 	max-width: 100%;
+ }
+
+section , header , footer {
+    float: left;
+    width: 100%;
+}
+
+a {
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    cursor: pointer !important;
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+.pad-top-60 {
+    padding-top: 60px !important;
+}
+
+.pad-bot-60 {
+    padding-bottom: 60px !important;
+}
+
+.m-t-20 {
+    margin-top: 20px !important;
+}
+
+.m-t-30 {
+    margin-top: 30px !important;
+}
+
+.m-t-10 {
+    margin-top: 10px !important;
+}
+
+.m-b-5 {
+    margin-bottom: 5px !important;
+}
+
+.m-b-20 {
+    margin-bottom: 20px !important;
+}
+
+.m-b-30 {
+    margin-bottom: 30px !important;
+}
+
+.m-b-40 {
+    margin-bottom: 40px !important;
+}
+
+.col-white {
+	color:white !important;
+}
+
+.m-b-10 {
+    margin-bottom: 10px !important;
+}
+
+section.top-bar {
+    background: #3c3c3c;
+    padding: 5px 0px;
+}
+
+
+.top-bar-left {
+    float: left;
+    width: 100%;
+}
+
+.top-bar-left h6 {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    font-size: 13px;
+}
+
+.top-bar-left h6 span {
+    margin-left: 10px;
+}
+
+.top-bar-left h6 span i {
+    color: #dada12;
+}
+
+.top-bar-left h6 span b {
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.top-bar-right {
+    float: left;
+    width: 100%;
+    text-align: right;
+}
+
+.top-bar-right span {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    font-size: 13px;
+    margin-left: 25px;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+
+.top-bar-right span i {
+    color: #d09f28;
+}
+
+i.fa-phone {
+	transform:  rotate(90deg);
+	-webkit-transform:  rotate(90deg);
+}
+
+.top-bar-right span i {
+    color: #d09f28;
+    margin-right: 5px;
+}
+
+header {
+    padding: 10px 0px;
+}
+
+.logo {
+    float: left;
+}
+
+
+
+.logo a img {
+    width: 220px;
+}
+
+.navbar-custom {
+    float: right;
+}
+
+
+.menu-item {
+    float: left;
+    margin-left: 30px;
+    position: relative;
+}
+.menu-item a {
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    font-size: 16px;
+    padding: 36px 0px;
+    font-family: 'Roboto';
+}
+.banner-bg1 {
+    background-image: url("../HI/H1.JPEG XR");
+}
+.banner-bg2 {
+    background-image: url("../HI/H2.JPEG XR");
+}
+
+.banner-bg4 {
+    background-image: url("../HI/H3.JPEG XR");
+}
+
+
+
+
+.banner-slider .item {
+    background-size: cover;
+    padding: 150px 0px;
+    height: 650px;
+}
+
+.banner-text {
+    float: left;
+    width: 60%;
+    background: rgba(0,0,0,0.7);
+    padding: 20px 30px 30px 30px;
+}
+.banner-text h3 {
+    /*color: white;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin-bottom: 20px !important;
+    margin-top: 0px;
+    font-family: Roboto;*/
+    color: white;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    margin-top: 0px;
+    font-family: Roboto;
+}
+
+
+.banner-text h5 {
+    /*color: white;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 20px;*/
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.banner-text ul {
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+a.carousel-control {
+    width: 50px;
+    opacity: 1;
+}
+
+
+.renovate-text {
+    float: left;
+    width: 100%;
+}
+
+.renovate-text h2 {
+    color: black;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0px 0px 5px 0px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-family: 'Roboto';
+    max-width: 90%;
+}
+.renovate-text h3 {
+    color: black;
+    font-size: 18px;
+    max-width: 90%;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 30px;
+    margin-top: 12px;
+}
+p.para-text1 {
+    color: black;
+    font-size: 16px;
+    max-width: 92%;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+}
+.renovate-text h4 {
+    color: black;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+}
+.renovate-image1 {
+    float: left;
+    width: 100%;
+}
+
+.renovate-image1 img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px 40px 5px 40px;
+    border: 15px solid #925c1e;
+    box-shadow: 1px 1px 20px silver;
+}
+
+.renovate-image2 {
+    float: left;
+    width: 100%;
+}
+.renovate-image2 img {
+ 
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.fade-slider {
+  background: #363636;
+  width: 100%;
+  margin: 0 auto;
+}
+.fade-slider img {
+    display: none;
+    border: 3px solid #000;
+    height: auto;
+    width: 100%;
+    border: none;
+}
+.fade-slider img.show {
+  display: inline;
+}
+
+
+
+.detail-image {
+    float: left;
+    width: 100%;
+}
+.fade-slider {
+    background: none;
+    width: 100%;
+    margin: 0 auto;
+}
+.detail-text {
+    float: left;
+    width: 100%;
+}
+
+.detail-text h3 {
+    color: black;
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: 18px 0px 12px 0px;
+    font-family: 'Roboto';
+}
+
+h6.line1 {
+    background: #925c1e;
+    width: 100px;
+    font-size: 0px;
+    height: 4px;
+    border-radius: 30px;
+}
+.detail-text p {
+    color: black;
+    font-size: 17px;
+    letter-spacing: 0.2px;
+    line-height: 25px;
+    margin-bottom: 16px;
+}
+.detail-image {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.bg-silver {
+    background: #eee !important;
+
+}
+
+.detail-grids {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+ 
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+div#myCarousel {
+    float: left;
+    width: 100%;
+}
+.text-center h6.line1 {
+    margin: auto;
+}
+
+.advan-box {
+    float: left;
+    width: 100%;
+    background: #925c1e;
+}
+.advan-box h3 {
+    color: white;
+    margin: 20px 20px 15px 20px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    font-size: 24px;
+}
+.advan-box p {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    padding: 0px 20px;
+}
+
+.advan-box {
+    float: left;
+    width: 100%;
+    background: #925c1e;
+    min-height: 590px;
+}
+
+.deck-bg1 {
+	background-image: url("../images/deck-bg1.JPEG XR");
+	background-size: cover;
+	background-position: center center;
+}
+
+.deck-bg2 {
+	background-image: url("../images/deck-bg2.JPEG XR");
+	background-size: cover;
+	background-position: center center;
+}
+
+.deck-bg3 {
+	background-image: url("../images/deck-bg3.JPEG XR");
+	background-size: cover;
+	background-position: center center;
+}
+
+.navbar-handler {
+    display: none;
+}
+
+
+footer {
+    background: #252525;
+    padding: 60px 0px 30px 0px;
+}
+
+.footer-top {
+    float: left;
+    width: 100%;
+}
+.footer-col {
+    float: left;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.footer-col h3 {
+    color: white;
+    margin: 0px 0px 15px 0px;
+    /*   font-family: 'Roboto*/
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 32px;
+    font-size: 22px;
+}
+.footer-col p {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    line-height: 23px;
+    margin-bottom: 15px;
+}
+.footer-col ul {
+    padding: 0px;
+    list-style: none;
+}
+.footer-col ul li {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    line-height: 22px;
+    margin-bottom: 6px;
+    display: inline-block;
+    margin-right: 0px;
+    width: 50%;
+    float: left;
+}
+
+
+
+ul.double-list {
+    padding: 0px;
+    list-style: none;
+}ul.double-list li {
+    float: left;
+    width: 50%;
+    font-size: 16px;
+}
+
+.menu-item ol {
+    padding: 0px;
+    list-style: none;
+    background: #eee;
+    margin: 0px;
+    position: absolute;
+    left: 0px;
+    top: 85px;
+    width: 250px;
+    z-index: 9999;
+    display: none;
+}
+.menu-item ol li a {
+    font-size: 15px;
+    padding: 14px 10px;
+    border-bottom: 1px solid silver;
+    display: block;
+}
+.menu-item:hover ol {
+    display: block;
+}
+section.service-header img {
+    width: 100%;
+}
+.detail-image img {
+    width: 100%;
+}
+.advan-box2 {
+    margin-bottom: 40px;
+    min-height: 540px;
+}
+
+.double-list2 {
+    float: left;
+    width: 100%;
+}
+
+
+.double-list2 h3 {
+    color: black;
+    font-size: 30px;
+    margin-top: 34px;
+    margin-bottom: 20px;
+}
+
+.double-list2 ul {
+    padding: 0px;
+    list-style: none;
+}
+
+.double-list2 ul li {
+    color: black;
+    font-size: 19px;
+    float: left;
+    width: 25%;
+    margin-bottom: 10px;
+}
+.double-list3 {
+    float: left;
+    width: 100%;
+}
+
+.double-list3 h3 {
+    color: black;
+    font-size: 25px;
+    margin: 15px 0px 24px 0px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.double-list3 ul {
+    float: left;
+    padding: 0px;
+    margin-right: 50px;
+    list-style: none;
+}
+
+.double-list3 ul h5 {
+    color: black;
+    font-size: 22px;
+    margin: 0px 0px 25px 0px;
+}
+.double-list3 ul li {
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    color: black;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+ul.list-bullet li {
+    padding-left: 15px;
+    position: relative;
+}
+ul.list-bullet li b {
+    font-size: 0px;
+    position: absolute;
+    left: 0px;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    background: black;
+    border-radius: 100%;
+}
+.double-list2 h3 {
+    color: black;
+    font-size: 35px;
+    margin-top: 34px;
+    margin-bottom: 20px;
+}
+
+.email-form2 {
+    float: left;
+    width: 60%;
+}
+
+.about-textual {
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.about-textual h3 {
+    color:#925c1e;
+    font-size: 36px;
+    margin: 10px 0px 30px 0px;
+    letter-spacing: 1px;
+}
+
+.about-textual img {
+    width: 100%;
+}
+.about-textual h6 {
+    color: black;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.about-textual p {
+    color: black;
+    text-align: left;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
+}
+
+.about-textual img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+a.custom-btn2 {
+    background: #925c1e;
+    color: white;
+    font-size: 16px;
+    padding: 14px 35px;
+    letter-spacing: 1px;
+}
+a.custom-btn2:hover {
+background:black;
+}
+
+.contact-head {
+    float: left;
+    width: 100%;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.contact-head h3 {
+    color:#925c1e;
+    font-size: 36px;
+    margin: 10px 0px 10px 0px;
+    letter-spacing: 1px;
+}
+
+.contact-details {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.contact-details p a {
+    color: #925c1e;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.contact-form {
+    float: left;
+    width: 100%;
+}
+
+.form-field2 {
+    float: left;
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.form-field2 p {
+    color: black;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.form-field2 input {
+    width: 100%;
+    height: 44px;
+    color: black;
+    font-size: 15px;
+    padding: 0px 10px;
+    background: #fafafa;
+    outline: none !important;
+    border: 1px solid silver !important;
+}
+
+.form-field2 textarea {
+    width: 100%;
+    height:140px;
+    color: black;
+    font-size: 15px;
+    padding: 0px 10px;
+    background: #fafafa;
+    outline: none !important;
+    border: 1px solid silver !important;
+}
+
+.form-field2 input[type="submit"] {
+    background: #925c1e;
+    width: 180px;
+    border: none;
+    color: white;
+    letter-spacing: 1px;
+    border: none !important;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.form-field2 input[type="submit"]:hover {
+    background:black !important;
+}
+
+.jobs-head {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.jobs-head h3 {
+    color: #224e87;
+    font-size: 35px;
+}
+
+.jobs-content {
+    float: left;
+    width: 100%;
+    column-width: 300px;
+    column-gap: 15px;
+}
+.jobx-box {
+    margin-bottom: 30px;
+}
+.jobx-box img {
+    border-radius: 10px;
+}
+.clinic-photo-gallery {
+  background-color: #000;
+  margin-top: 4em;
+  overflow: hidden;
+}
+.clinic-photo-gallery ul {
+  display: table;
+}
+.clinic-photo-gallery li {
+  display: table-cell;
+  vertical-align: middle;
+}
+.clinic-photo-gallery li img {
+  max-height: 465px;
+  width: auto;
+  margin: 0 auto;
+}
+ul.lSPager.lSGallery {
+    width: 100% !important;
+}
+
+ul.lSPager.lSGallery li a img {
+    max-height: 80px;
+    width: 100%;
+}
+.clinic-photo-gallery {
+    background-color: transparent;
+    margin-top: 4em;
+    overflow: hidden;
+}
+
+.lSAction > a.lSPrev {
+    width: 45px;
+    display: block;
+    top: 50%;
+    height: 45px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    margin-top: -16px;
+    opacity: 1;
+    -webkit-transition: opacity 0.35s linear 0s;
+    transition: opacity 0.35s linear 0s;
+    background-color: transparent;
+    border-radius: 100%;
+    background-position: top left !important;
+    background-repeat: no-repeat;
+    background-position-x: 3px !important;
+    border: none;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-image: url(../images/left-arrow.JPEG\ XR) !important;
+}
+
+
+
+
+
+.lSAction > a.lSNext {
+    width: 45px;
+    display: block;
+    top: 50%;
+    height: 45px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    margin-top: -16px;
+    opacity: 1;
+    -webkit-transition: opacity 0.35s linear 0s;
+    transition: opacity 0.35s linear 0s;
+    background-color: transparent;
+    border-radius: 100%;
+    background-position: top left !important;
+    background-repeat: no-repeat;
+    background-position-x: 3px !important;
+    border: none;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-image: url(../images/right-arrow.JPEG\ XR) !important;
+}
+.lSSlideOuter .lSPager.lSGallery img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 100px !important;
+}
+
+.lSSlideOuter .lSPager.lSGallery li {
+    width: auto !important;
+    margin-right: 10px !important;
+    margin-bottom: 10px !important;
+    float: none !important;
+    display: inline-block !important;
+}
+
+ ul.lSPager.lSGallery li a img {
+    max-height: 65px;
+    width: 100%;
+}
+
+ul#lightSlider {
+    margin-bottom: 30px !important;
+}
+
+ul.lSPager.lSGallery {
+    text-align: center;
+}
+
+.jobs-gallery {
+    float: left;
+    width: 100%;
+}
+.estimate-form3 h3 {
+    color: #925c1e;
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.clinic-photo-gallery li img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 700px !important;
+}
+
+.lSSlideWrapper {
+    max-height: 550px;
+    overflow: hidden;
+    margin-bottom: 20px !important;
+}
+
+.lSSlideOuter .lSPager.lSGallery img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 80px !important;
+    height: 70px !important;
+    border:2px solid transparent;
+}
+
+ul.lSPager.lSGallery {
+    transform: none !important;
+}
+
+.lSSlideOuter .lSPager.lSGallery li.active img, .lSSlideOuter .lSPager.lSGallery li:hover img {
+    border:2px solid #925c1e !important;
+}
+
+.clinic-photo-gallery {
+    float: left;
+    width: 100%;
+}
+
+.jobs-head {
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.clinic-photo-gallery {
+    float: left;
+    width: 100%;
+    margin: 0px !important;
+}
+
+.jobs-head {
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+
+.jobs-head h3 {
+    color: #925c1e;
+    font-size: 35px;
+}
+.email-header-form {
+    float: right;
+    width: 40%;
+}
+
+.con-foot p {
+    padding-left: 25px;
+    white-space: pre;
+    position: relative;
+}
+
+.con-foot p img {
+    width: 18px;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+}
+
+
+.email-header-form {
+    float: right;
+    width: 350px;
+    position: absolute;
+    top: 25%;
+    right: 7%;
+}
+.email-header-form .row {
+    margin-top: 10px !important;
+}
+
+
+/*Media Queries Of Website*/
+
+/*Small Laptops*/
+@media screen and (max-width:992px) and (min-width:768px) { 
+.email-header-form {
+    float: right;
+    width: 35%;
+}
+}
+
+
+/*Tablet Devices*/
+@media screen and (max-width:767px) and (min-width:520px) { 
+
+.top-bar-left h6 {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.top-bar-right {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.renovate-image2 {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+div#myCarousel {
+    margin: 0px 0px 40px 0px !important;
+}
+.detail-image2 {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.detail-text h3 {
+    color: black;
+    font-weight: normal;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin: 18px 0px 12px 0px;
+    font-family: 'Roboto';
+    line-height: 35px;
+}
+.advan-box {
+    float: left;
+    width: 100%;
+    background: #925c1e;
+    min-height: 0px;
+    padding-bottom: 15px;
+    max-width: 400px;
+    margin-bottom: 40px;
+}
+.detail-image {
+    margin: 0px !important;
+}
+.navbar-handler {
+    display: block;
+    float: right;
+    background: #925c1e;
+    padding: 7px 5px;
+    margin-top: 25px;
+}
+.navbar-handler img {
+    width: 30px;
+}
+.logo a img {
+    width: 180px;
+}
+.menu-item {
+    float: left;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.menu-item a {
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    font-size: 16px;
+    padding: 10px 0px;
+    font-family: 'Roboto';
+    display: block;
+}
+.navbar-custom {
+    float: right;
+    width: 100%;
+    display: none;
+    padding-top: 15px;
+}
+.banner-text {
+    float: left;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    padding: 20px 30px 30px 30px;
+}
+.banner-text h3 {
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-bottom: 20px !important;
+    margin-top: 0px;
+    font-family: Roboto;
+}
+.banner-text h5 {
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.banner-slider .item {
+    background-size: cover;
+    padding: 70px 0px;
+    height: auto;
+}
+.menu-item ol {
+    position: static;
+    width: 100%;
+}
+.email-header-form {
+    float: left;
+    width: 100%;
+}
+.email-header-form {
+    float: right;
+    width: 350px;
+    position: static;
+    top: 25%;
+    right: 7%;
+    margin: 0px !important;
+    background: black !important;
+    padding: 50px 20px !important;
+}
+.email-header-form form {
+    max-width: 450px;
+    float: left;
+    width: 100%;
+}
+}
+
+
+
+
+/*Mobile Devices*/
+@media screen and (max-width:519px) and (min-width:320px) { 
+
+.top-bar-left h6 {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.top-bar-right {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.renovate-image2 {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+div#myCarousel {
+    margin: 0px 0px 40px 0px !important;
+}
+.detail-image2 {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.detail-text h3 {
+    color: black;
+    font-weight: normal;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin: 18px 0px 12px 0px;
+    font-family: 'Roboto';
+    line-height: 35px;
+}
+.advan-box {
+    float: left;
+    width: 100%;
+    background: #925c1e;
+    min-height: 0px;
+    padding-bottom: 15px;
+    max-width: 400px;
+    margin-bottom: 40px;
+}
+.detail-image {
+    margin: 0px !important;
+}
+.navbar-handler {
+    display: block;
+    float: right;
+    background: #925c1e;
+    padding: 7px 5px;
+    margin-top: 25px;
+}
+.navbar-handler img {
+    width: 30px;
+}
+.logo a img {
+    width: 180px;
+}
+.menu-item {
+    float: left;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.menu-item a {
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    font-size: 16px;
+    padding: 10px 0px;
+    font-family: 'Roboto';
+    display: block;
+}
+.navbar-custom {
+    float: right;
+    width: 100%;
+    display: none;
+    padding-top: 15px;
+}
+.banner-text {
+    float: left;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    padding: 20px 30px 30px 30px;
+}
+.banner-text h3 {
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-bottom: 20px !important;
+    margin-top: 0px;
+    font-family: Roboto;
+}
+.banner-text h5 {
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.banner-slider .item {
+    background-size: cover;
+    padding: 70px 0px;
+    height: auto;
+}
+ul.double-list li {
+    float: left;
+    width: 100%;
+    font-size: 16px;
+}
+.footer-col ul li {
+ 
+    width: 100%;
+    float: left;
+}
+.menu-item ol {
+    position: static;
+    width: 100%;
+}
+.email-form {
+    float: left;
+    width: 100%;
+}
+.jobs-content {
+    float: left;
+    width: 100%;
+    column-width: 220px;
+    column-gap: 15px;
+}
+.email-header-form {
+    float: left;
+    width: 100%;
+}
+.email-header-form {
+    float: right;
+    width: 350px;
+    position: static;
+    top: 25%;
+    right: 7%;
+    margin: 0px !important;
+    background: black !important;
+    padding: 50px 20px !important;
+}
+.email-header-form form {
+    max-width: 500px;
+    float: left;
+    width: 100%;
+}
+}
+
+/*****************
+  New CSS by 
+*****************/
+
+.bottom-slogon-bg{
+    background: #EEEEEE;
+    color: black;
+    font-size: 20px;
+}
+.call-us-but{
+    background: transparent;
+    border: solid 2px #f0cb59;
+    border-radius: 3px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px 22px;
+}
+.call-us-but:hover{
+    background: #f0cb59;
+    border: solid 2px #f0cb59;
+}
+
+ 
+@media screen and (max-width: 39.9375em) { 
+    .email-form{
+        float: left;
+        width: 100%;
+        margin-top: 70px;
+    }
+}
+
+.email-head{
+    background: #f0cb59;
+    padding: 10px 20px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -25px;
+    text-shadow: 1px 1px #777;
+}
+
+.get-quote-but{
+    background: #333333;
+    padding: 10px 20px;
+    color: #f0cb59;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.get-quote-but:hover{
+    background: #f0cb59;
+    color: #000;    
+}
+
+.yellow-but{
+    background: #f0cb59;
+    border: solid 2px #f0cb59;
+    border-radius: 3px;
+    color: #555;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 20px;
+}
+.yellow-but:hover{
+    background: transparent;
+    border: solid 2px #f0cb59;
+    color: #fff;
+}
+
+.footer-col a{
+    color: #fff;
+}
+.footer-col a:hover{
+    color: #f0cb59;
+}
+
+.fs-12{
+    font-size: 12px !important;
+}
+
+#MyFrame
+{
+    height: 360vh;
+}
+
+@media all and (max-width:480px)
+{
+    #MyFrame
+    {
+        height: 400vh;
+    }   
+}
+
+
+@media all and (max-width:408px)
+{
+    #MyFrame
+    {
+        height: 420vh;
+    }   
+}
+
+
+@media all and (max-width:390px)
+{
+    #MyFrame
+    {
+        height: 450vh;
+    }   
+}
+
+@media all and (max-width:300px)
+{
+    #MyFrame
+    {
+        height: 480vh;
+    }   
+}
+
+@media all and (max-width:295px)
+{
+    #MyFrame
+    {
+        height: 590vh;
+    }   
+}

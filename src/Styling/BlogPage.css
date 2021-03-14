@@ -1,0 +1,46 @@
+.bSearch
+{
+  font-size: 20px;
+}
+
+.b1
+{
+    border: 1px solid blue;
+}
+
+#shb
+{
+    margin-bottom: 5%;
+}
+.latestPosts
+{
+    margin-left: 2.5%;
+    color: #7b747a;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/* For the loader */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    /* text-align: center; */
+    margin-top: 7%;
+    border-top: 8px solid #f0cb59;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  /* For the loader */

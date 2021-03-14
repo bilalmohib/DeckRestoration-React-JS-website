@@ -1,0 +1,87 @@
+.title {
+    font-size: 25px;
+    font-style: normal;
+}
+
+#sizing-addon2 {
+    font-size: 21px;
+    background-color: #292b2c;
+    color: white;
+}
+
+.text-red {
+    color: red;
+    font-weight: bolder;
+}
+
+.category_select {
+    font-size: 25px;
+    width: 40%;
+}
+
+.admin-container {
+    border: 3px solid rgb(112, 112, 112);
+    height: auto;
+    margin-top: 2%;
+    border-radius: 5px;
+}
+
+.innerBlock {
+    border: 1px solid rgb(67, 67, 68);
+    box-shadow: 2px 2px 1px 2px rgb(74, 80, 74);
+    border-radius: 5px;
+    width: 90%;
+}
+
+.form-label {
+    font-size: 20px;
+}
+
+.uploadBtn {
+    font-size: 20px;
+}
+
+.paraAdmin {
+    color: #000000;
+    line-height: 25px;
+    word-spacing: 2px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.SubRowsTitle
+{
+    color: #000000;
+    line-height: 25px;
+    word-spacing: 2px;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.adminInput
+{
+    width: 280px;
+    font-size: 20px;
+}
+
+@media all and (max-width:1100px) {
+    .innerBlock {
+        border: 1px solid rgb(132, 146, 2);
+        box-shadow: 1px 1px 1px 1px rgb(172, 172, 172);
+        width: 97%;
+    }
+}
+
+.btnToggle
+{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+.btnToggle
+{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
