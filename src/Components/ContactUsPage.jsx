@@ -1,10 +1,47 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Header from "./Header";
 import Footer from "./Footer";
 import '../Styling/Home.css';
 
 function ContactUsPage() {
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [address, setAddress] = useState('');
+    const [phone, setPhone] = useState('');
+    const [projectDetails, setProjectDetails] = useState('');
+    const [messageSuccess, setMessageSuccess] = useState(false);
+
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault()
+
+        let xhe = new XMLHttpRequest();
+
+        xhe.addEventListener('load', () => {
+            // update the email status with the response
+            console.log(xhe.responseText);
+
+        })
+
+        xhe.open('GET', 'https://sendemail.deckrestorationservices.com/contact.php?sendto=' +
+            '&email=' + email +
+            '&name=' + name +
+            '&address=' + address +
+            '&phone=' + phone +
+            '&projectDetails=' + projectDetails);
+
+        //send the request
+        xhe.send();
+
+        setMessageSuccess(true);
+
+        setTimeout(() => {
+            setMessageSuccess(false);
+        }, 3000)
+    }
+
 
     return (
         <div>
@@ -34,44 +71,50 @@ function ContactUsPage() {
                                 <div className="col-md-6 col-lg-6 col-sm-6 col-xs-12">
                                     <div className="form-field2">
                                         <p> Your Name * </p>
-                                        <input type="text" name="name" placeholder="Your Name" required />
+                                        <input type="text" name="name" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)} required />
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-6 col-sm-6 col-xs-12">
                                     <div className="form-field2">
                                         <p> Address/City* </p>
-                                        <input type="text" placeholder name="city" required />
+                                        <input type="text" placeholder="Your City" name="city" value={address} onChange={(e) => setAddress(e.target.value)} required />
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-6 col-sm-6 col-xs-12">
                                     <div className="form-field2">
                                         <p> Email Address * </p>
-                                        <input type="text" placeholder="Your Email" name="email" required />
+                                        <input type="text" placeholder="Your Email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-6 col-sm-6 col-xs-12">
                                     <div className="form-field2">
                                         <p> Phone Number * </p>
-                                        <input type="text" placeholder="Your Phone" name="phone" required />
+                                        <input type="text" placeholder="Your Phone" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} required />
                                     </div>
                                 </div>
                                 <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                     <div className="form-field2">
                                         <p> Please tell us a bit about your project </p>
-                                        <textarea placeholder="Your Message" name="address" defaultValue={""} />
+                                        <textarea placeholder="Your Message" name="address" value={projectDetails} onChange={(e) => setProjectDetails(e.target.value)} />
                                     </div>
                                 </div>
                                 <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                     <div className="form-field2">
-                                        <input type="submit" defaultValue="SEND" name="submit" />
+                                        <input type="submit" defaultValue="SEND" onClick={e => handleFormSubmit(e)} name="submit" />
                                         <span id="error_message" className="text-danger" />
                                         <span id="success_message" className="text-success" />
                                     </div>
                                 </div>
                                 <div className="col-md-12 hide message">
-                                    <div className="form-field2 alert alert-success">
-                                        <strong>Than you for contacting us -</strong> We will get back to you soon!
-                                </div>
+                                    {(messageSuccess) ? (
+                                        <div className="form-field2 alert alert-success">
+                                            <strong>Than you for contacting us -</strong> We will get back to you soon!
+                                        </div>
+                                    ) : (
+                                        <div className="form-field2 alert hide alert-success">
+                                            <strong>Than you for contacting us -</strong> We will get back to you soon!
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         </form>

@@ -3,13 +3,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import BottomSlogan from "./BottomSlogan";
 import { Helmet } from "react-helmet";
-// import axios from "axios";
-import * as emailjs from 'emailjs-com'
 
 import '../Styling/Home.css';
-import { Message } from '@material-ui/icons';
-
-//const axios = require('axios').default;
 
 class Home extends React.PureComponent {
     constructor(props) {
@@ -20,7 +15,7 @@ class Home extends React.PureComponent {
             address: '',
             phone: '',
             city: '',
-            messageSuccess:false
+            messageSuccess: false
         }
     }
 
@@ -29,38 +24,31 @@ class Home extends React.PureComponent {
 
         let xhe = new XMLHttpRequest();
 
-        xhe.addEventListener('load',()=>{
+        xhe.addEventListener('load', () => {
             // update the email status with the response
             console.log(xhe.responseText);
 
         })
 
-        xhe.open('GET','http://api.ruvictor.com/sendemail/index.php?sendto='+this.state.email + 
-           '&name='+this.state.name+
-           '&address='+this.state.address+
-           '&city='+this.state.city+
-           '&phone='+this.state.phone)
+        xhe.open('GET', 'https://sendemail.deckrestorationservices.com/index.php?sendto=' + '&email=' + this.state.email +
+            '&name=' + this.state.name +
+            '&address=' + this.state.address +
+            '&phone=' + this.state.phone)
 
-           //send the request
-           xhe.send();
+        //send the request
+        xhe.send();
 
+        this.setState({
+            messageSuccess:true
+        })
 
-        ////////////////////////////////////   
-        // let templateParams = {
-        //     from_name: this.state.email,
-        //     to_name: 'bilalmohib7896@gmai.com',
-        //     subject: this.state,
-        //     message_html: "A message",
-        // }
-        // emailjs.send(
-        //     'service_4io9ocs',
-        //     'template_r3zh9g8',
-        //     templateParams,
-        //     'user_jhV7zmT6gOxCy06YDz3ON'
-        // )
-        ////////////////////////////////////
+        setTimeout(()=>{
+            this.setState({
+                messageSuccess:false
+            })
+        },3000)
     }
-    componentDidUpdate=()=>{
+    componentDidUpdate = () => {
         console.log(this.state)
     }
     render() {
@@ -70,7 +58,7 @@ class Home extends React.PureComponent {
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>Deck Restoration Services</title>
-                    <meta name="description" content="Deck Restoration near me Illinois Deck Services – Staining Services, Deck Refinishing, Deck Repair -Wood Restoration Company – Power Washing Services"/>
+                    <meta name="description" content="Deck Restoration near me Illinois Deck Services – Staining Services, Deck Refinishing, Deck Repair -Wood Restoration Company – Power Washing Services" />
                 </Helmet>
 
                 <Header />
@@ -165,9 +153,15 @@ class Home extends React.PureComponent {
                                     </div>
                                 </div>
                                 <div className="col-md-12 message">
-                                    <div className="form-field2 alert hide alert-success">
-                                        <strong>Than you for contacting us -</strong> We will get back to you soon!
-                  </div>
+                                    {(this.state.messageSuccess) ? (
+                                        <div className="form-field2 alert alert-success">
+                                            <strong>Than you for contacting us -</strong> We will get back to you soon!
+                                        </div>
+                                    ) : (
+                                        <div className="form-field2 alert hide alert-success">
+                                            <strong>Than you for contacting us -</strong> We will get back to you soon!
+                                        </div>
+                                    )}
                                 </div>
                             </form>
                         </div>
