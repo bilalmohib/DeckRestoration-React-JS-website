@@ -25,12 +25,13 @@ function ContactUsPage() {
 
         })
 
-        xhe.open('GET', 'https://sendemail.deckrestorationservices.com/contact.php?sendto=' +
-            '&email=' + email +
-            '&name=' + name +
-            '&address=' + address +
-            '&phone=' + phone +
-            '&projectDetails=' + projectDetails);
+
+            xhe.open('GET', `https://sendemail.deckrestorationservices.com/contact.php?sendto=
+            &email=${email}
+            &name=${name}
+            &address=${address}
+            &phone=${phone}
+            &projectDetails=${projectDetails}`);
 
         //send the request
         xhe.send();

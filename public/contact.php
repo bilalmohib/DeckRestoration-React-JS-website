@@ -1,11 +1,11 @@
 <?php
-header("Access-Control-Allow-Origin: http://localhost:3000/contact");
+header("Access-Control-Allow-Origin: *");
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 // get refferer server
-if ($_SERVER['HTTP_REFERER'] === 'http://localhost:3000/contact') {
+if ($_SERVER['HTTP_REFERER'] === 'http://localhost:3000/') {
     // get data from Get method 
     $email = isset($_GET['email']) ? $_GET['email'] : null;
     $name = isset($_GET['name']) ? $_GET['name'] : null;
