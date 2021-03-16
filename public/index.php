@@ -5,7 +5,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 // get refferer server
-if ($_SERVER['HTTP_REFERER'] === 'https://deckrestorationservices.com/') {
+if ($_SERVER['HTTP_REFERER'] === 'http://localhost:3000/' || $_SERVER['HTTP_REFERER'] === 'https://deckrestorationservices.com/') {
     // get data from Get method 
     $email = isset($_GET['email']) ? $_GET['email'] : null;
     $name = isset($_GET['name']) ? $_GET['name'] : null;
