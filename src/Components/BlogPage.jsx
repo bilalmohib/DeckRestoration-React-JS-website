@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Header from "./Header";
 import Footer from "./Footer";
 import BottomSlogan from "./BottomSlogan";
+import { Helmet } from "react-helmet";
 
 import { connect } from "react-redux";
 
@@ -27,6 +28,19 @@ class BlogPage extends React.Component {
     }
     componentDidMount() {
         let jobData = [];
+
+        // firebase.database().ref(`/`).on('value', (snapshot) => {
+        //     snapshot.forEach(function (data) {
+        //         var dat2 = data.val();
+        //         let keys2 = Object.keys(dat2);
+        //         let arr = {
+        //             d: dat2,
+        //             k: keys2
+        //         }
+        //         jobData2.push(arr)
+        //         // console.log(data.val())
+        //     })
+
         //Taking data from job vacancy form
         firebase.database().ref(`Blog/`).on('value', (snapshot) => {
             snapshot.forEach(function (data) {
@@ -87,6 +101,11 @@ class BlogPage extends React.Component {
         console.log("firebase sales data", this.props.user_blogs);
         return (
             <div>
+                 <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Deck Restoration Services | Blog</title>
+                    <meta name="description" content="Deck Restoration near me Illinois Deck Articles – All the articles on this page." />
+                </Helmet>
                 <Header />
                 <a href="tel:7736648791" className="btn phoneMobile">
                     <i className="glyphicon glyphicon-earphone ico-phone"></i>

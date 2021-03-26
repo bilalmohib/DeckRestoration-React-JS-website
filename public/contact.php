@@ -1,11 +1,13 @@
 <?php
-header("Access-Control-Allow-Origin: http://localhost:3000/contact");
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Methods: HEAD, GET, POST, PUT, PATCH, DELETE, OPTIONS");
+header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method,Access-Control-Request-Headers, Authorization");
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 // get refferer server
-if ($_SERVER['HTTP_REFERER'] === 'http://localhost:3000/contact') {
+if ($_SERVER['HTTP_REFERER'] === 'http://localhost:3000/' || $_SERVER['HTTP_REFERER'] === 'https://deckrestorationservices.com/') {
     // get data from Get method 
     $email = isset($_GET['email']) ? $_GET['email'] : null;
     $name = isset($_GET['name']) ? $_GET['name'] : null;

@@ -5,13 +5,14 @@ import 'firebase/auth'
 // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
-    apiKey: "AIzaSyCSJjT2AbsMsAITc_lzYrekCqk6mxRCm3g",
-    authDomain: "sourcenergydecs.firebaseapp.com",
-    projectId: "sourcenergydecs",
-    storageBucket: "sourcenergydecs.appspot.com",
-    messagingSenderId: "383395539303",
-    appId: "1:383395539303:web:ad7d99e77f9746de5867c2",
-    measurementId: "G-1B7RFJCWLC"
+    apiKey: "AIzaSyCuRq4NYo83-NmVrUFyAVIGhWeuW2o1umE",
+    authDomain: "deck-restoration-services.firebaseapp.com",
+    databaseURL: "https://deck-restoration-services-default-rtdb.firebaseio.com",
+    projectId: "deck-restoration-services",
+    storageBucket: "deck-restoration-services.appspot.com",
+    messagingSenderId: "310888293792",
+    appId: "1:310888293792:web:638bf9e3b12d1e185cf0c5",
+    measurementId: "G-1KHNGXS4VP"
   };
   
   // Initialize Firebase

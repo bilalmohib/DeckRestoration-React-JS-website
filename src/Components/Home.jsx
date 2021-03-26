@@ -54,7 +54,6 @@ class Home extends React.PureComponent {
     render() {
         return (
             <div>
-
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>Deck Restoration Services</title>
@@ -68,7 +67,7 @@ class Home extends React.PureComponent {
 
                 {/* Banner Slider Section Starts Here */}
                 <section className="banner-slider">
-                    <div id="carousel-example-generic" className="carousel slide" data-ride="carousel" data-interval={10000}>
+                    <div id="carousel-example-generic" className="carousel slide" data-ride="carousel" data-interval={3000}>
                         {/* Wrapper for slides */}
                         <div className="carousel-inner" role="listbox">
                             <div className="item active banner-bg1">

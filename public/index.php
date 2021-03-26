@@ -1,6 +1,7 @@
 <?php
+//Here what should be
 header("Access-Control-Allow-Origin: *");
-
+//Here what should be
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
